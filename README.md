@@ -1,0 +1,2 @@
+# github-actions-course
+Repository containing examples and notes from the GitHub Actions course
