@@ -1,6 +1,6 @@
 name: 04 - Using Actions
 
-on: workflow_dispatch
+on: push
 
 jobs:
   build:
@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: '20.x'
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm install
+          npm ci
       - name: Run Unit Tests
         run: npm run test
   
